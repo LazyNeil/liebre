@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+:root {
+  --yellow: #eac926;
+  --blue: #03264c;
+  --blue-light: #1259c3;
+  --gray-dark: #666;
+  --gray-light: #ebebeb;
+  --green: #39b54a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "roboto";
+  background-color: var(--yellow);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+
+.burger-menu {
+  padding: 2em 2em;
+  text-align: center;
+}
+
+.burger-menu i {
+  background-color: var(--blue-light);
+  color: var(--gray-light);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.fee {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  color: var(--gray-dark);
+}
+
+.footer-card {
+  padding: 2em;
+  text-align: center;
+}
+
+.footer-card i {
+  font-size: 2em;
+  padding: 10px 2em;
+  color: var(--blue-light);
+}
+
+.products {
+  background-color: var(--gray-light);
+}
+
+.product img {
+  width: 100%;
+}
