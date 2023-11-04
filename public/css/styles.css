@@ -11,12 +11,35 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+.product-info-box{
+  display: flex;
+}
+
+.product-desc-box > .product-delivery-icon {
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+
+.product-desc-box {
+  position: relative;
 }
 
 body {
+  background-color: var(--yellow);
   font-size: 12px;
   font-family: "roboto";
-  background-color: var(--yellow);
 }
 
 ul {
@@ -32,8 +55,8 @@ a:link {
 }
 
 .banner img {
-width: 100%;
-margin-bottom: -5px;
+  margin-bottom: -5px;
+  width: 100%;
 }
 
 .search {
@@ -54,33 +77,28 @@ aside {
 }
 
 .burger-menu i {
+  border-radius: 5px;
   background-color: var(--blue-light);
+  padding: 10px;
   color: var(--gray-light);
   font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .price {
-  font-size: 18px;
+  flex: 30%;
+  font-size: 18px
 }
 
 .discount {
-  font-size: 16px;
+  flex: 70%;
   color: var(--green);
-}
-
-.description {
-  display: none;
   font-size: 16px;
-  color: var(--gray-dark);
-  margin-top: 1em;
 }
 
 .section-title {
-  font-size: 24px;
-  color: var(--gray-dark);
   padding: 1em 0 1em;
+  color: var(--gray-dark);
+  font-size: 24px;
   text-align: center;
 }
 
@@ -89,8 +107,8 @@ aside {
 }
 
 footer {
-  width: 100%;
   background-color: white;
+  width: 100%;
   color: var(--gray-dark);
 }
 
@@ -100,9 +118,9 @@ footer {
 }
 
 .footer-card i {
-  font-size: 2em;
   padding: 10px 0 2em;
   color: var(--blue-light);
+  font-size: 2em;
 }
 
 .products {
@@ -110,22 +128,22 @@ footer {
 }
 
 .product {
-  background-color: white;
   margin: 1em;
+  background-color: white;
   padding: 1em;
 }
 
 .product img {
-  width: 100%;
   border-bottom: 1px solid var(--gray-light);
+  width: 100%;
 }
 
 .product i {
   border: 1px solid var(--green);
   border-radius: 100%;
-  font-size: 1rem;
   padding: 8px;
   color: var(--green);
+  font-size: 1rem;
 }
 
 /* Tablet size */
