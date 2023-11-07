@@ -14,8 +14,9 @@
   padding: 0;
 }
 
-.product-info-box{
+.product-desc-box {
   display: flex;
+  padding: 1em;
 }
 
 .product-desc-box > .product-delivery-icon {
@@ -29,6 +30,7 @@
   padding: 5px;
   width: 30px;
   height: 30px;
+  color: var(--green);
   font-size: 16px;
 }
 
@@ -59,16 +61,40 @@ a:link {
   width: 100%;
 }
 
+.heading{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+#heading-logo{
+  max-width: 50%;
+  flex: 50%;
+}
+
 .search {
+  flex: 25%;
   padding: 1em;
 }
 
 .navbar {
+  flex: 50%;
   display: none;
 }
 
 aside {
+  flex: 50%;
   display: none;
+}
+
+.menu-row{
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item{
+  padding: 0 1em;
 }
 
 .burger-menu {
@@ -86,13 +112,16 @@ aside {
 
 .price {
   flex: 30%;
-  font-size: 18px
+  align-self: flex-end;
+  font-size: 18px;
 }
 
 .discount {
   flex: 70%;
+  align-self: flex-end;
   color: var(--green);
   font-size: 16px;
+  text-align: center;
 }
 
 .section-title {
@@ -103,6 +132,7 @@ aside {
 }
 
 .fee {
+  flex: 25%;
   text-align: center;
 }
 
@@ -126,24 +156,41 @@ footer {
 .products {
   background-color: var(--gray-light);
 }
-
-.product {
-  margin: 1em;
-  background-color: white;
-  padding: 1em;
+.register-section-form {
+  min-height: 100vh;
+  background-color: var(--gray-light);
 }
 
-.product img {
+.register-form{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.product-card {
+  flex: 100%;
+  margin: 1em;
+  background-color: white;
+  max-width: 100%;
+}
+
+.products-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1em 0;
+}
+
+.product-card img {
   border-bottom: 1px solid var(--gray-light);
   width: 100%;
 }
 
-.product i {
-  border: 1px solid var(--green);
-  border-radius: 100%;
-  padding: 8px;
-  color: var(--green);
-  font-size: 1rem;
+.product-name {
+  display: none;
+  padding: 1em;
+  padding-top: 1em;
+  color: var(--gray-dark);
 }
 
 /* Tablet size */
@@ -157,10 +204,12 @@ footer {
   aside {
     display: block;
   }
-  .product {
+  .product-card {
+    flex: 40%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 50%;
   }
-  .description {
+  .product-name {
     display: block;
   }
 }
@@ -176,10 +225,12 @@ footer {
   aside {
     display: block;
   }
-  .product {
+  .product-card {
+    flex: 20%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 25%;
   }
-  .description {
+  .product-name {
     display: block;
   }
 }
