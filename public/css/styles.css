@@ -128,6 +128,8 @@ a:link {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   width: 100%;
   color: var(--gray-dark);
@@ -243,7 +245,11 @@ footer {
   background-color: #0022aa;
 }
 
-footer > article > i:hover {
+footer p {
+  flex: 100%;
+}
+
+footer > article:hover i {
   transition: 300ms color ease;
   color: var(--green);
 }
@@ -269,7 +275,7 @@ footer > article > i:hover {
   .navbar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .burger-menu {
@@ -284,6 +290,20 @@ footer > article > i:hover {
 
 /* Desktop size */
 @media only screen and (min-width: 769px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-card {
+    flex: 25%;
+    padding: 1rem 2rem;
+  }
+
   .search {
     flex: 25%;
   }
